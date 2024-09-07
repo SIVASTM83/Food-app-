@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        header ul{
+            display: flex;
+            list-style: none;
+            
+        }
+        header ul li{
+            margin-left: 120px;
+            font-size: 20px;
+            color: white;
+        }
+        #head1 {
+            text-align: center;
+        }
+        h1 {
+            font-size: 80px;
+            color: white;
+        }
+        input {
+            width: 800px;
+            height: 50px;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        h2{
+            font-size: 55px;
+            color: white;
+        }
+        #head2 {
+            background-image: url("{% static 'image/backimage.jpg' %}");
+            height: 500px;
+        }
+        #food {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        img {
+            width: 300px;
+            height: 200px;
+        }
+        button {
+            padding: 8px 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+        }
+        button:hover {
+            background-color: rgb(5, 7, 126);
+            color: rgb(245, 240, 240);
+        }
+        h4 {
+            font-size: 30px;
+            text-align: center;
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="head2">
+    <header>
+        <h3>Get The App</h3>
+        <ul>
+            <li>Investor Relations</li>
+            <li>Add Restaurant Login</li>
+            <li>Login in</li>
+            <li>Sign up</li>
+        </ul>
+    </header>
+    <div id="head1">
+    <h1>Zomato</h1>
+    <h2>Discover the best food & drinks in Karur</h2>
+    <input type="search" name="search>" placeholder="Search for Restaurant">
+</div>
+</div>
+<br>
+<br>
+<h4>Non Veg</h4>
+<div id="food">
+<div>
+    <img src="{% static 'image/chicken.jpg' %}">
+    <p><b>Chicken Briyani</b><br> price:200 <br> offer price: 100 (50%)</p>
+    <button><a href="{% url 'Order' %}">Order</a></button>
+</div>
+<div>
+    <img src="{% static 'image/mutton.jpg' %}">
+    <p><b>Mutton Briyani</b><br> price:100 <br> offer price: 50 (50%)</p>
+    <button>Order</button>
+</div>
+<div>
+    <img src="{% static 'image/fish.jpg' %}">
+    <p><b>fish Briyani</b><br> price:200 <br> offer price: 100 (50%)</p>
+    <button>Order</button>
+</div>
+<div>
+    <img src="{% static 'image/prawn.jpg' %}">
+    <p><b>prawn Briyani</b><br> price:200 <br> offer price: 100 (50%)</p>
+    <button>Order</button>
+</div>
+</div>
+<br>
+<br>
+<h4>Veg</h4>
+<div id="food">
+    <div>
+        <img src="{% static 'image/idly.jpg' %}">
+        <p><b>Idly</b><br> price:200 <br> offer price: 100 (50%)</p>
+        <button>Order</button>
+    </div>
+    <div>
+        <img src="{% static 'image/dosa.jpg' %}">
+        <p><b>Dosa</b><br> price:100 <br> offer price: 50 (50%)</p>
+        <button>Order</button>
+    </div>
+    <div>
+        <img src="{% static 'image/rice.jpg' %}">
+        <p><b>Sambar Rice</b><br> price:200 <br> offer price: 100 (50%)</p>
+        <button>Order</button>
+    </div>
+    <div>
+        <img src="{% static 'image/pongal.jpg' %}">
+        <p><b>Pongal</b><br> price:200 <br> offer price: 100 (50%)</p>
+        <button>Order</button>
+    </div>
+    </div>
+    <br>
+    <br>
+    <h4>Juice</h4>
+    <div id="food">
+        <div>
+            <img src="{% static 'image/apple.jpg' %}">
+            <p><b>apple</b><br> price:200 <br> offer price: 100 (50%)</p>
+            <button>Order</button>
+        </div>
+        <div>
+            <img src="{% static 'image/orange.jpg' %}">
+            <p><b>orange</b><br> price:100 <br> offer price: 50 (50%)</p>
+            <button>Order</button>
+        </div>
+        <div>
+            <img src="{% static 'image/mango.jpg' %}">
+            <p><b>mango</b><br> price:200 <br> offer price: 100 (50%)</p>
+            <button>Order</button>
+        </div>
+        <div>
+            <img src="{% static 'image/strawberry.jpg' %}">
+            <p><b>strawberry</b><br> price:200 <br> offer price: 100 (50%)</p>
+            <button>Order</button>
+        </div>
+        </div>
+        <br>
+        <br>
+        <h4>Ice Cream</h4>
+        <div id="food">
+            <div>
+                <img src="{% static 'image/vannila.jpg' %}">
+                <p><b>vannila</b><br> price:200 <br> offer price: 100 (50%)</p>
+                <button>Order</button>
+            </div>
+            <div>
+                <img src="{% static 'image/butter.jpg' %}">
+                <p><b>Butter Briyani</b><br> price:100 <br> offer price: 50 (50%)</p>
+                <button>Order</button>
+            </div>
+            <div>
+                <img src="{% static 'image/chocolate.jpg' %}">
+                <p><b>Chocolate</b><br> price:200 <br> offer price: 100 (50%)</p>
+                <button>Order</button>
+            </div>
+            <div>
+                <img src="{% static 'image/strawberry.jpg' %}">
+                <p><b>strawberry</b><br> price:200 <br> offer price: 100 (50%)</p>
+                <button>Order</button>
+            </div>
+            </div>
+
+</body>
+</html>
